@@ -1,0 +1,15 @@
+.tooltip {
+	.tooltip-inblock {
+		@apply w-full px-2 py-0.5 flex text-white;
+		//dark:border-t dark:-mt-px
+		.tooltip-icon {
+			@apply inline-flex text-sm items-center justify-center mr-2;
+		}
+		.tooltip-label {
+			@apply inline-block font-bold flex-1 leading-5;
+		}
+		.tooltip-cls-btn {
+			@apply inline-block text-sm items-center justify-center ml-2;
+		}
+	}
+}

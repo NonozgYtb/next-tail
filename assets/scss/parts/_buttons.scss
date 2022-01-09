@@ -1,0 +1,55 @@
+.btn {
+	@apply inline-flex px-4 py-2 transition duration-150 items-center;
+	&:not(.btn-disabled) {
+		@apply cursor-pointer;
+	}
+	&.btn-disabled {
+		@apply cursor-not-allowed select-none;
+	}
+	&.btn-primary {
+		@apply rounded-md font-bold;
+		&:not(.btn-disabled):not(.btn-active) {
+			@apply bg-teal-500 hover:bg-teal-600;
+		}
+		&.btn-disabled {
+			@apply bg-teal-800 grayscale filter;
+		}
+		&.btn-active {
+			@apply bg-teal-600;
+		}
+	}
+	&.btn-pagina-primary {
+		@apply font-bold;
+		@apply border border-white;
+
+		&:not(.btn-disabled):not(.btn-active) {
+			@apply bg-teal-600 hover:bg-teal-800 border-opacity-20;
+		}
+		&.btn-disabled {
+			@apply bg-teal-800 grayscale filter border-opacity-20;
+		}
+		&.btn-active {
+			@apply bg-teal-500 border-opacity-40;
+		}
+	}
+	& + & {
+		@apply ml-1.5;
+	}
+}
+
+.btn-pagina {
+	@apply relative inline-flex items-center px-4 py-2 text-sm font-medium border border-gray-300;
+	&:not(.btn-pagina-no-rounded) {
+		@apply rounded-lg;
+	}
+	&:not(.btn-pagina-disabled) {
+		@apply text-gray-500 transition bg-gray-200 hover:text-gray-800 hover:bg-white;
+	}
+	&.btn-pagina-disabled {
+		@apply text-gray-400 bg-gray-300 cursor-not-allowed select-none;
+	}
+	&.btn-pagina-active {
+		box-shadow: inset 0 0 0 1px #0003;
+		@apply font-bold text-gray-600 bg-gray-300;
+	}
+}

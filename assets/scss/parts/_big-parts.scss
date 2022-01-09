@@ -1,0 +1,20 @@
+.img-bg-site {
+	content: "";
+	background-image: url("/images/placeholder/fall-leaves.jpg");
+	@apply fixed top-0 bottom-0 left-0 right-0 filter blur-1 bg-cover;
+}
+.row-sys {
+	@apply flex flex-wrap;
+	.item {
+		@apply flex justify-center;
+		.in-item {
+			@apply inline-block my-auto;
+		}
+	}
+}
+.row {
+	@apply flex flex-wrap -m-2;
+	.col {
+		@apply p-2;
+	}
+}

@@ -1,0 +1,19 @@
+.table-custom {
+	border-style: hidden;
+	@screen md {
+		box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.4);
+	}
+	@apply w-full border-collapse rounded-lg;
+	.table-custom-head {
+		@apply hidden p-3 font-bold text-gray-600 uppercase bg-gray-200 border border-gray-300 md:table-cell;
+	}
+	.table-custom-tr {
+		@apply text-gray-800 flex flex-row flex-wrap mb-4 bg-white md:hover:bg-gray-100 md:table-row md:flex-row md:flex-nowrap md:mb-0 rounded-lg md:rounded-none;
+	}
+	.table-custom-td {
+		@apply relative border-gray-200 text-center;
+		.table-custom-icon {
+			@apply text-gray-400 hover:text-gray-600 hover:bg-gray-100 p-3 block;
+		}
+	}
+}

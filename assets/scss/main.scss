@@ -1,0 +1,31 @@
+@import "./fonts";
+@tailwind base;
+
+@layer base {
+	*,
+	::before,
+	::after {
+		--tw-border-opacity: 1;
+		border-color: rgba(var(--color-border-primary), var(--tw-border-opacity));
+	}
+	body {
+		font-family: "Segoe UI", system-ui, "-apple-system", "Roboto", Helvetica,
+			Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
+	}
+}
+
+@tailwind components;
+
+@layer components {
+	@import "./parts/add";
+	@import "./parts/big-parts";
+	@import "./parts/buttons";
+	@import "./parts/carousel";
+	@import "./parts/footer";
+	@import "./parts/layout";
+	@import "./parts/pages";
+	@import "./parts/navbar";
+	@import "./parts/tooltip";
+}
+
+@tailwind utilities;
